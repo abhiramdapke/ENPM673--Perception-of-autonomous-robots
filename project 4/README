@@ -1,0 +1,5 @@
+The script folder contains 3 separate scripts for each dataset.
+
+Place the file in the folder with the images of the respective dataset and run the program as it reads the data from the directory in which the scipt is present.
+
+To write the output images into a folder, a folger of the name in the cv2.imwrite command has to be created in the directory in which the script is present.
