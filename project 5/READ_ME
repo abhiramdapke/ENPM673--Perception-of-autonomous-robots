@@ -1,0 +1,31 @@
+Directory:
+ All the files should be run from inside the folder "Oxford_dataset"
+
+
+Scripts included:
+ Implementation using inbuilt opencv  funtions:
+	1. VO_inbuilt.py - Run this file
+
+ Implementation using given pipeline:
+	1. main.py - Run this file
+	2. FindCorrespondence.py - Generates features between 2 frames using ORB. Matches the features using Brute Force Matcher. Finds the points of correspondence.
+	3. EstimateFundamentalMatrix.py - Estimates the Funadamental Matrix for the given set of points
+	4. RANSACForF.py - Implements RANSAC to reject outliers and get the best estimate of F
+	5. EstimateEssentialMatrix.py - Estimates the Essential Matrix after the Fundamental Matrix is calculated
+	6. EstimateCameraPose.py - Calcultes the 4 possible camera poses
+	7. LinearTriangulation.py - Gets the 3d estimate for the 2d points by solving least squares using SVD
+	8. Disambiguation.py - Narrows down the choice of (C, R) for the pose by checking for chirality condition
+
+Dependencies:
+1. OpenCV
+2. Matplotlib
+3. Tkinter
+4. Numpy
+5. mpl_toolkits 
+
+
+
+Plotting:
+Calculate the homogenous transfromation matrix from the rotation and translation obtained after disambiguation. New homogenous co-ordinates can be calculated and plotted.
+
+
